@@ -18,10 +18,14 @@
         }
       });
     
-      ReactDOM.render(
-        React.createElement(Hello, {name: "World"}),
-        document.getElementById('container')
-      );
+      function render() {
+        ReactDOM.render(
+          React.createElement(Hello, {name: "World"}),
+          document.getElementById('container')
+        );
+      }
+      
+      render();
     </script>
   </body>
 </html>
